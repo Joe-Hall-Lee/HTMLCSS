@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 伪元素 */
+        div::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        div::first-line {
+            /* font-size: 30px; */
+            background: yellow;
+        }
+
+        div::before {
+            content: "aaaaa";
+        }
+
+        div::after {
+            content: "bbbb";
+        }
+    </style>
+</head>
+
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sapiente illo libero odit commodi quod,
+        non incidunt architecto deserunt aliquid, quia rerum dolore eius quasi! Incidunt, magnam. Illum, tenetur
+        asperiores!</div>
+</body>
+
+</html>

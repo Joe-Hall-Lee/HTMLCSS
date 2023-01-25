@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>表单进阶-下拉菜单</h1>
+    <div>
+        <div>你的收货地址</div>
+        <!-- select支持的属性
+            1．size, 显示几个
+            2．multiple, 选多个
+        -->
+
+        <!-- option支持的属性
+            1．value, 提供给后端需要用的value值。
+            2．select
+        -->
+        <select size="1">
+            <option value="ln">辽宁</option>
+            <option value="sd">山东</option>
+            <option>山西</option>
+            <option selected>河南</option>
+            <option selected>河北</option>
+        </select>
+    </div>
+
+    <div>
+        <select size="3" multiple>
+            <option>桌子</option>
+            <option selected>椅子</option>
+            <option selected>凳子</option>
+            <option selected>电脑</option>
+            <!-- <option>河北</option> -->
+        </select>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            list-style-type: none;
+            /* 
+                disc 实心圆
+                circle 空心圆
+                square 实心正方形
+                none 
+            */
+        }
+
+        .li1 {
+            list-style-image: url(img/1.jpg);
+        }
+
+        .li2 {
+            list-style-image: url(img/2.jpg);
+        }
+
+        .li3 {
+            list-style-image: url(img/3.jpg);
+        }
+
+        li {
+            border: 1px solid red;
+            list-style-position: inside;
+        }
+
+        .box {
+            list-style: inside none url(img/1.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="li1">11111</li>
+        <li class="li2">22222</li>
+        <li class="li3">33333</li>
+    </ul>
+
+    <ul class="box">
+        <li>4444</li>
+        <li>5555</li>
+        <li>6666</li>
+    </ul>
+</body>
+
+</html>

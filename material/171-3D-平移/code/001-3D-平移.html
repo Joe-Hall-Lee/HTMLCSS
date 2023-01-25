@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 5px solid black;
+            transform-style: preserve-3d;
+
+            /* flat: 2D舞台 */
+            /* preserve-3d: 3D舞台 */
+
+            position: relative;
+            margin: 0 auto;
+
+            /* transform: rotateY(30deg); */
+
+            perspective: 900px;
+            /* 设置景深 */
+        }
+
+        .center {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: red;
+            left: 50%;
+            top: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+
+            transition: all 5s;
+        }
+
+        .box:hover .center {
+            /* transform: translateZ(-200px); */
+
+            transform: translate3d(0, 0, 200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="center"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .box1 {
+            background: red;
+            border: 1px solid yellow;
+            /* margin: 50px; */
+
+            /* margin: 50px 100px; */
+
+            /* margin: 50px 100px 200px; */
+
+            /* margin: 10px 20px 30px 40px; */
+
+            margin-left: 10px;
+        }
+
+        .box2 {
+            margin-top: -100px;
+            margin-left: 300px;
+            background: green;
+            border: 1px solid blue;
+        }
+
+        .box3 {
+            background: black;
+            margin: 10px auto;
+        }
+
+        /* 
+            1．margin-方向 4个方向
+            2．背景色蔓延？没有
+            3．* {margin: 0}
+　　　　　　 4．外边距负值？支持
+            5．屏幕居中？margin: 0 auto; 横向居中
+         */
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <h1>hello</h1>
+
+    <div class="box3">
+        大家好
+    </div>
+</body>
+
+</html>

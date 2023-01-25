@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 500px;
+            height: 500px;
+            background: yellow;
+            overflow: hidden;
+            /* float: left; */
+            /* padding-top: 100px; */
+            /* border: 1px solid transparent; */
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin-top: 100px;
+            /* float: left; */
+        }
+
+        /*
+            1．子margin-top===>父的padding-top，注意高度计算。
+            2．给父盒子设置边框
+            3．加浮动
+            4．overflow: hidden BFC
+        */
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>

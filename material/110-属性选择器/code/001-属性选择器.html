@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 属性选择器 [class] */
+
+        div[class] {
+            background: yellow;
+        }
+
+        p[class] {
+            background: red;
+        }
+
+        /* div .box1 {
+
+        } */
+        /* 完全匹配 */
+        /* div[class=box1] {
+            border: 1px solid blue;
+        } */
+
+        /* 包含就匹配 */
+        div[class~=box1] {
+            border: 1px solid blue;
+        }
+
+        input[name] {
+            background: yellow;
+        }
+
+        input[type=email] {
+            background: red;
+        }
+
+        /* 模糊匹配
+        class^=b 以这个开头的
+        class$=b 以这个结尾
+        class=*b 包含某个字符 */
+
+        div[class*="1"],
+        p[class*="1"] {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">div-11111</div>
+    <div class="box2">div-22222</div>
+    <div>div-33333</div>
+    <div class="box1">div-44444</div>
+    <div class="box1 box3">div-5555555555555555555</div>
+    <p class="p1">p-11111</p>
+    <p class="p2">p-22222</p>
+    <p>p-33333</p>
+
+    <div>
+        <h1>注册页面</h1>
+        用户名：<input type="text" name="username"><br>
+        密码：<input type="password" name="password"><br>
+        年龄：<input type="number" name="age"><br>
+        邮箱：<input type="email"><br>
+    </div>
+
+</body>
+
+</html>

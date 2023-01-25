@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            display: block;
+        }
+
+        .box {
+            width: 350px;
+            margin: 0 auto;
+            border: 5px solid red;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img,
+        p,
+        h2 {
+            transition: all 1s;
+        }
+
+
+        .box .pic {
+            width: 100%;
+        }
+
+        .box:hover .pic {
+            transform: translateY(-20px);
+            opacity: 0.5;
+        }
+
+        .box h2 {
+            position: absolute;
+            left: 60px;
+            top: 100px;
+            color: white;
+            transform: translateY(-200px);
+        }
+
+        .box:hover h2 {
+            transform: translateX(0);
+        }
+
+        .box p {
+            position: absolute;
+            bottom: 0;
+            left: 80px;
+            /* transform: translateY(30px); */
+            opacity: 0;
+        }
+
+        .box:hover p {
+            transform: translateY(-100px);
+            opacity: 1;
+        }
+
+        .box .musicBtn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 40px;
+            height: 40px;
+            animation: run 1s linear infinite;
+        }
+
+        @keyframes run {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .box:hover .musicBtn {
+            /* transform: rotate(360deg); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="img/3.png" alt="" class="pic">
+        <div>
+            <h2>title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptate ducimus architecto, ex
+                incidunt dicta tenetur molestias optio praesentium pariatur. Eligendi veniam itaque ullam, et provident
+                suscipit obcaecati eum incidunt?</p>
+        </div>
+
+        <img src="img/musicBtn.png" alt="" class="musicBtn">
+    </div>
+</body>
+
+</html>

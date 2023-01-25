@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            background-image: url(img/1.jpg);
+            /* 
+                repeat: 默认平铺
+                repeat-x: x轴平铺
+                repeat-y: y轴平铺
+                no-repeat: 不平铺
+            */
+            background-repeat: no-repeat;
+
+            background-position: right bottom;
+
+            /* 
+                1．20px 20px
+                2. 10% 10% 
+                3．left center right 
+                   top center bottom
+            */
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            background-image: url(img/2.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            /* 默认平铺 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

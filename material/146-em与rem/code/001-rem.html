@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        .div1,
+        .div2 {
+            border: 1px solid red;
+            font-size: 16px;
+        }
+
+        .div1 p {
+            font-size: 32px;
+        }
+
+        .div2 p {
+            /* font-size: 2em; */
+            font-size: 2rem;
+        }
+
+        .div2 p span {
+            /* font-size: 2em; */
+
+            font-size: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- px, em, rem之争
+        px: 50px
+        em: 相对单位，相对于父元素的字体大小。div width: 10em;
+        rem: 相对单位，相对于根元素（html）字体大小。div width: 10rem;
+    -->
+
+    <div class="div1">
+        <p>赵钱孙李</p>
+    </div>
+    <div class="div2">
+        <p>赵钱孙<span>李</span></p>
+    </div>
+</body>
+
+</html>

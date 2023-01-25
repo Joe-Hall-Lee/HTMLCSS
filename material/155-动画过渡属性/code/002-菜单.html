@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 50px;
+            background: yellow;
+            border: 1px solid gray;
+        }
+
+        div ul {
+            /* display: none; */
+            margin-top: 50px;
+            transition: all 1s;
+            height: 0;
+            overflow: hidden;
+        }
+
+        div:hover ul {
+            height: 200px;
+            /* display: block; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        我的菜单
+        <ul>
+            <li>11111</li>
+            <li>2222</li>
+            <li>3333</li>
+            <li>4444</li>
+            <li>55555</li>
+        </ul>
+    </div>
+</body>
+
+</html>

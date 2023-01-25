@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: column-reverse;
+
+            /* row, column, row-reverse, column-reverse */
+            /* 弹性盒 */
+        }
+
+        .box div {
+            width: 50px;
+            height: 50px;
+            border: 1px dashed red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 弹性盒是一种新的布局方式，特别适合移动端布局 -->
+
+    <!-- 影响：
+        1．子元素默认横向排列
+        2．行内元素，变成了块级元素
+        3．只有一个元素的时候 margin: auto 自动居中
+    -->
+    <div class="box">
+        <div>1111</div>
+        <div>2222</div>
+        <div>3333</div>
+        <div>4444</div>
+    </div>
+</body>
+
+</html>

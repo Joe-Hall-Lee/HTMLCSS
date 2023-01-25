@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            /* overflow: visible; 显示溢出 */
+            /* overflow: hidden; 溢出隐藏，文本裁切 */
+            /* overflow: scroll; */
+            /* overflow: auto; */
+            /* overflow: inherit; 继承父元素的效果 */
+        }
+
+        .box {
+            /* overflow: auto; */
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat natus dolores reiciendis corrupti non illum
+        facilis dignissimos voluptatum fuga numquam dolorum exercitationem praesentium, nam et nulla quis, fugit
+        excepturi mollitia?
+    </div>
+
+    <div class="box">
+        <img src="./1.png" alt="">
+    </div>
+
+</body>
+
+</html>

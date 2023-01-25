@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 复合写法：
+            1．用空格隔开
+            2．顺序可以换
+            3．可以只取一个值，放在后面能覆盖前面的值
+        */
+        /* background-size属性只能单独用 */
+        .box1 {
+            width: 600px;
+            height: 600px;
+            /* background-color: yellow;
+            background-image: url(img/1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed; */
+
+            background: url(img/1.jpg) no-repeat center fixed yellow;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            background: url(img/1.jpg) no-repeat center top;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 100px;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .box {
+            width: 7.5rem;
+            height: 100px;
+            background: yellow;
+            /* font-size: 16px; */
+        }
+    </style>
+
+    <script>
+        // fontsize计算
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 750 * 100 + 'px'
+
+        // fontsize = 当前设备的CSS布局宽度 / 物理分辨率（设计稿的宽度） * 基准font-size
+    </script>
+
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

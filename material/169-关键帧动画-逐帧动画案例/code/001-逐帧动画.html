@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: red;
+
+            /* animation: run 5s steps(1, start); */
+            /* animation: run 5s step-start; */
+            animation: run 5s step-end;
+
+            /* end（保留当前帧，看不到最后一帧，动画结束） */
+            /* start（保留下一帧，看不到第一帧，从第一帧很快跳到最后一帧） */
+        }
+
+        @keyframes run {
+            0% {
+                background: red;
+            }
+
+            50% {
+                background: green;
+            }
+
+            100% {
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- steps(直接进行关键帧跳跃), linear, ease-in -->
+
+    <div></div>
+</body>
+
+</html>
